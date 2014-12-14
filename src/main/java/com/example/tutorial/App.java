@@ -9,8 +9,7 @@ import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
 public class App {
     @Bean
     ProtobufHttpMessageConverter protobufHttpMessageConverter() {
-        return new ProtobufHttpMessageConverter((extensionRegistry) -> {
-        });
+        return new ProtobufHttpMessageConverter();
     }
 
     public static void main(String[] args) {
